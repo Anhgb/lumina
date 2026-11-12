@@ -1,0 +1,86 @@
+export const FRAME_MODELS = [
+  {
+    id: 'aviator',
+    name: 'Aviator',
+    shortName: 'Aviator',
+    description: 'Gọng phi công giọt lệ cổ điển.',
+    group: 'classic',
+    frameType: 'acetate',
+  },
+  {
+    id: 'cateye',
+    name: 'Cat-Eye',
+    shortName: 'Cat-Eye',
+    description: 'Đuôi mắt vút nhẹ, đường nét mềm.',
+    group: 'classic',
+    frameType: 'acetate',
+  },
+  {
+    id: 'round',
+    name: 'Round',
+    shortName: 'Round',
+    description: 'Tròng tròn retro gọn gàng.',
+    group: 'classic',
+    frameType: 'acetate',
+  },
+  {
+    id: 'square',
+    name: 'Square',
+    shortName: 'Square',
+    description: 'Gọng vuông bo góc cân đối.',
+    group: 'classic',
+    frameType: 'acetate',
+  },
+  {
+    id: 'modern-pilot',
+    name: 'Modern Pilot',
+    shortName: 'Pilot mới',
+    description: 'Pilot gọn, mặt kính đa giác và cầu đôi.',
+    group: 'trending',
+    frameType: 'titanium',
+  },
+  {
+    id: 'sculpted-cateye',
+    name: 'Sculpted Cat-Eye',
+    shortName: 'Cat-Eye điêu khắc',
+    description: 'Đuôi gọng sắc, tạo khối rõ nét.',
+    group: 'trending',
+    frameType: 'acetate',
+  },
+  {
+    id: 'oversized-square',
+    name: 'Oversized Square',
+    shortName: 'Square lớn',
+    description: 'Acetate bản lớn với góc bo chủ đích.',
+    group: 'trending',
+    frameType: 'acetate',
+  },
+  {
+    id: 'slim-oval',
+    name: 'Slim Oval',
+    shortName: 'Oval mảnh',
+    description: 'Oval nhỏ gọn, viền kim loại mảnh.',
+    group: 'trending',
+    frameType: 'titanium',
+  },
+  {
+    id: 'geometric-hexagon',
+    name: 'Geometric Hexagon',
+    shortName: 'Lục giác',
+    description: 'Lục giác cân với các cạnh rõ ràng.',
+    group: 'trending',
+    frameType: 'titanium',
+  },
+  {
+    id: 'bug-eye',
+    name: 'Bug-Eye',
+    shortName: 'Oversized',
+    description: 'Vùng phủ rộng, vẫn giữ tầm nhìn thoáng.',
+    group: 'trending',
+    frameType: 'acetate',
+  },
+];
+
+export const FRAME_MODEL_IDS = FRAME_MODELS.map(({ id }) => id);
+export const isValidFrameModel = (modelId) => FRAME_MODEL_IDS.includes(modelId);
+export const getFrameModel = (modelId) => FRAME_MODELS.find(({ id }) => id === modelId) || FRAME_MODELS[0];

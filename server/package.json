@@ -1,0 +1,18 @@
+{
+  "name": "lumina-eyewear-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Backend API for Lumina Eyewear (Node.js, Express, MySQL/XAMPP)",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test test/runAll.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0"
+  }
+}
